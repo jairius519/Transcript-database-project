@@ -40,4 +40,8 @@ values(26, 'Bachelor of Science', 'Computer Science'),
 	   (12,  'Bachelor of Science', 'Finance'),
        (5, 'Bachelor of Arts', 'English'),
        (7, 'Bachelor of Mathematics', 'Math');
+
+select Student.name, Transcript.transcriptID
+from Student inner join Transcript on Student.studentID = Transcript.studentID
+order by Student.name;
     
